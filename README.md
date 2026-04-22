@@ -27,7 +27,7 @@ Then proceed to setup:
 
 ```bash
 # clone the repository
-git clone --recursive https://github.com/stoatchat/for-web client
+git clone --recursive https://github.com/AvaLilac/for-web-raspberry-pi
 cd client
 
 # Install Cargo
