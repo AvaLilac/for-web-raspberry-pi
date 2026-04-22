@@ -31,7 +31,7 @@ git clone --recursive https://github.com/stoatchat/for-web client
 cd client
 
 # Install Cargo
-https://github.com/stoatchat/for-web
+curl https://sh.rustup.rs -sSf | sh
 
 # update submodules if you pull new changes
 # git submodule init && git submodule update
