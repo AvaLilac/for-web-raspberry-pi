@@ -33,6 +33,10 @@ cd client
 # Install Cargo
 curl https://sh.rustup.rs -sSf | sh
 
+# Install The Dependents As They Dont Have Prebuilts
+cargo install mdbook --version 0.5.2
+cargo install mdbook-katex --version 0.9.3
+
 # update submodules if you pull new changes
 # git submodule init && git submodule update
 
