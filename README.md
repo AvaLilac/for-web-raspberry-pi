@@ -22,6 +22,7 @@ Before getting started, you'll want to install:
 
 - [Git](https://git-scm.com/install/)
 - [mise-en-place](https://mise.jdx.dev/getting-started.html)
+- Cargo
 
 Then proceed to setup:
 
@@ -32,6 +33,10 @@ cd client
 
 # update submodules if you pull new changes
 # git submodule init && git submodule update
+
+# Install some depents
+cargo install mdbook --version 0.5.2
+cargo install mdbook-katex --version 0.9.3
 
 # install all packages
 mise install:frozen
