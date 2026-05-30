@@ -1,8 +1,9 @@
-import { createMemo } from "solid-js";
+import { createMemo, Show } from "solid-js";
 import { useMediaDeviceSelect } from "solid-livekit-components";
 
 import { Trans } from "@lingui-solid/solid/macro";
 
+import { CONFIGURATION } from "@revolt/common";
 import { useState } from "@revolt/state";
 import {
   CategoryButton,
