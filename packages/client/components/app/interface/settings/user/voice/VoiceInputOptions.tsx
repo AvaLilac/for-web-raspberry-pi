@@ -23,9 +23,7 @@ export function VoiceInputOptions() {
       <CategoryButton.Group>
         <SelectInput kind="audioinput" />
         <SelectInput kind="audiooutput" />
-        <Show when={CONFIGURATION.ENABLE_VIDEO}>
-          <SelectInput kind="videoinput" />
-        </Show>
+        <SelectInput kind="videoinput" />
       </CategoryButton.Group>
       <VolumeSliders />
     </Column>
