@@ -1,6 +1,6 @@
 <div align="center">
 <h1>
-  Stoat Frontend
+  Stoat Frontend - With Raspberry Pi Support
   
   [![Stars](https://img.shields.io/github/stars/stoatchat/for-web?style=flat-square&logoColor=white)](https://github.com/stoatchat/for-web/stargazers)
   [![Forks](https://img.shields.io/github/forks/stoatchat/for-web?style=flat-square&logoColor=white)](https://github.com/stoatchat/for-web/network/members)
@@ -34,7 +34,7 @@ cd client
 # update submodules if you pull new changes
 # git submodule init && git submodule update
 
-# Install some depents
+# Install some deps, as they dont natively have a arm version. you have to compile it yourself using these commands
 cargo install mdbook --version 0.5.2
 cargo install mdbook-katex --version 0.9.3
 
