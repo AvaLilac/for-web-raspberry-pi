@@ -271,7 +271,7 @@ export function Messages(props: Props) {
       }
 
       // Stop collecting messages
-      collectedMessages = [];
+      collectedMessages = undefined;
 
       // Mark as fetching has ended
       setFetching();
@@ -279,7 +279,7 @@ export function Messages(props: Props) {
       // If we're not at the end, restore scroll position
       if (existingState && !existingState.atEnd) {
         setTimeout(() =>
-          listRef!.scrollTo({
+          listRef?.scrollTo({
             top: existingState.scrollTop!,
             behavior: "instant",
           }),
@@ -288,7 +288,7 @@ export function Messages(props: Props) {
       // Or... reset scroll to the end
       else if (atEnd()) {
         setTimeout(() =>
-          listRef!.scrollTo({
+          listRef?.scrollTo({
             top: 9999999,
             behavior: "instant",
           }),
@@ -507,7 +507,7 @@ export function Messages(props: Props) {
         );
 
         // Stop collecting messages
-        collectedMessages = [];
+        collectedMessages = undefined;
 
         // Animate scroll to bottom
         setTimeout(() => {
@@ -650,8 +650,14 @@ export function Messages(props: Props) {
    * @param message Message object
    */
   function onMessage(message: MessageInterface) {
-    if (message.channelId === props.channel.id && atEnd()) {
-      setMessages([message, ...messages()]);
+    if (message.channelId === props.channel.id) {
+      if (collectedMessages) {
+        collectedMessages.push(message);
+        return;
+      }
+      if (atEnd()) {
+        setMessages([message, ...messages()]);
+      }
     }
   }
 
