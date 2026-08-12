@@ -14,6 +14,9 @@ Track the project roadmap on <a href="https://op.stoatinternal.com/projects/revo
 </div>
 <br/>
 
+> [!WARNING]
+> This is discontinued, I no longer use StoatChat to selfhost my Personal Social Platform. Fluxer has a better Selfhost and i have switched to using fluxer as my selfhost. This Repo will not be maintained. I have switched because StoatChat doesn't meet many needs when it comes to needing to selfhost a social platform. This Repo has been archived
+
 ## Development Guide
 
 Before contributing, make yourself familiar with [our contribution guidelines](https://developers.stoat.chat/developing/contrib/), the [code style guidelines](./GUIDELINES.md), and the [technical documentation for this project](https://stoatchat.github.io/for-web/).
